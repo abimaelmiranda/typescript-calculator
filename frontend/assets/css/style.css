@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(47, 255, 179);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.calc-painel{
+    display: flex;
+    flex-flow: column;
+    row-gap: 30px;
+    padding: 50px;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(140, 132, 132);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.267) ;
+}
+
+.display{
+    height: 70px;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    outline: none;
+    border: none;
+    background-color: rgb(176, 174, 174);
+}
+
+.calc-key{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    background-color: rgb(223, 210, 210);
+    border-radius: 50%;
+    transition: all ease-in-out 0.2s;
+}
+.calc-key:hover{
+    background-color: orange;
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+}
+.calc-keyboard{
+    display: flex;
+    height: 100%;
+    flex-flow: row wrap;
+    column-gap: 5px;
+    justify-content: center;
+}
+.equal{
+  width: 80%;
+  border-radius: 10px;
+}
+.equal:hover{
+  background-color: orange;
+  width: 83%;
+  cursor: pointer;
+}
