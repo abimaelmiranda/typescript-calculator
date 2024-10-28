@@ -27,6 +27,11 @@ export default class Calculator implements ICalculator {
       }
       if (el.classList.contains('calc-key')) this.display.value += el.innerText;
     });
+
+    document.addEventListener('keypress', (e: KeyboardEvent) => {
+      const key = e.key;
+      if (key === 'Enter') this.processExpression();
+    });
   }
 
   processExpression(): void {

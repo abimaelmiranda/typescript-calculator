@@ -30,6 +30,11 @@ var Calculator = (function () {
             if (el.classList.contains('calc-key'))
                 _this.display.value += el.innerText;
         });
+        document.addEventListener('keypress', function (e) {
+            var key = e.key;
+            if (key === 'Enter')
+                _this.processExpression();
+        });
     };
     Calculator.prototype.processExpression = function () {
         var expression = this.display.value;
